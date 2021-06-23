@@ -1,3 +1,5 @@
+//사용기기 : 테이블
+
 var shell = require('shelljs');
 var fs = require('fs');
 process.stdin.setEncoding('utf8')

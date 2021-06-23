@@ -1,5 +1,7 @@
 // 음성인식 텍스트 파일 > 서버
 //서버로 텍스트에서 추출한 값 보내는 파일
+//사용기기 : 테이블
+
 
 var request = require('request');
 process.stdin.setEncoding('utf8')

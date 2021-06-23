@@ -1,4 +1,7 @@
 #!/usr/bin/env node
+// 리스트로 저장된 파일 중 최신의 cin의 값 받아오기 
+// 사용 기기 : 테이블
+
 process.stdin.setEncoding('utf8')
 var util = require('util');
 var shell = require('shelljs');
@@ -13,7 +16,6 @@ fs.readFile('log.txt', 'utf8', function (err, data) {
   cuttext2 = data2.substr(0,19);
   origindata = cuttext2;
   if(err) console.log('error', err);
-  // 리스트로 저장된 파일 중 최신의 cin의 값 받아오기 
   
   var url = 'http://203.253.128.177:7579/Mobius/test20175107/textfromRPi/' + origindata;
   
